@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- icon -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
+
+</head>
+<body>
+	    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="logo.svg" style="height:50px;">
+                <a class="navbar-brand page-scroll" href="#page-top">Full Form</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#portfolio">About</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about">Feedback</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#team">Privacy</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">Term</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#services">Suggest full form</a>
+                    </li>
+                    </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<script type="text/javascript">
+	$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+</script>
+
+<!-- search bar -->
+    
+<header>
+<div class="close">
+    <span class="front"></span>
+    <span class="back"></span>
+</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<br><br><br><br>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</header>
+<table>
+  <thead>
+  <tr>
+    <th>Term</th>
+    <th>Full Form</th>
+    <th>Category</th>
+  </tr>
+  </thead>
+  <tbody id="myTable" style="">
+  <tr>
+    <td>A</td>
+    <td>Ampere</td>
+    <td>Academic & Science » Units</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Blood Type A</td>
+    <td>Medical » Anatomy & Physiology</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Bit</td>
+    <td>Academic & Science » Units</td>
+  </tr>
+  <tr>
+    <td>D/O</td>
+    <td>	Disorder</td>
+    <td>Medical » Diseases & Conditions</td>
+  </tr>
+  <tr>
+    <td>E&P</td>
+    <td>Earnings & Profits</td>
+    <td>Business</td>
+  </tr>
+  <tr>
+    <td>F1</td>
+    <td>Formula 1</td>
+    <td>Sports and games	</td>
+  </tr>
+  <tr>
+    <td>g</td>
+    <td>Gram</td>
+    <td>Science</td>
+  </tr>
+  <tr>
+    <td>H&M</td>
+    <td>Hennes & Mauritz</td>
+    <td>Business » Companies & Corporations</td>
+  </tr>
+  <tr>
+    <td>IA</td>
+    <td>I Agree</td>
+    <td>Miscellaneous » Chat & Messaging</td>
+  </tr>
+  <tr>
+    <td>m</td>
+    <td>metre</td>
+    <td>Academic & Science » Units</td>
+  </tr>
+  <tr>
+    <td>L10N</td>
+    <td>Localization</td>
+    <td>Computing » Programming & Development</td>
+  </tr>
+  <tr>
+    <td>Q1</td>
+    <td>First Quarter</td>
+    <td>Business » Business Terms</td>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">FullForms is one of the world’s best online source for abbreviations and full forms, where we strive to give you an accurate, user-friendly, and top most search experience. All of us have different areas of interest and various orbits of expertise. We appreciate this expertise of our users in different domains and project FullForms as a platform and be part of this human edited website. We always value your suggestions and would like to hear from you.
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+<!--             <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="category/c-language/">C</a></li>
+              <li><a href="category/front-end-development/">UI Design</a></li>
+              <li><a href="category/back-end-development/">PHP</a></li>
+              <li><a href="category/java-programming-language/">Java</a></li>
+              <li><a href="category/android/">Android</a></li>
+              <li><a href="category/templates/">Templates</a></li>
+            </ul>
+ -->          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="contact/">About Us</a></li>
+              <li><a href="contribute-at-scanfcode/"><i class="material-icons">&#xe87f;</i> Feedback</a></li>
+              <li><a href="privacy-policy/"><i class="fa fa-file-text-o"></i> Privacy Policy</a></li>
+              <li><a href="sitemap/"><i class="fas fa-terminal"></i> Terms</a></li>
+              <li><a href=""><i class="fa fa-phone"></i> Contact</a></li>
+              <li><a href="	about/"><i class="fa fa-pen-alt"></i> Suggest Full form</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Full Form</a>.
+            </p>
+            <p class="copyright-text">Made By 
+         <a href="#">Vraj Shukla</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+</body>
+</html>
